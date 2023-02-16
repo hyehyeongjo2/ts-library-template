@@ -30,7 +30,7 @@ module.exports = {
   output: {
     filename: 'index.js',
     path: path.resolve(__dirname, 'build'),
-    library: "MyLibrary",
+    library: "MyLibrary", // 라이브러리 명 수정 해야합니다.
     libraryTarget: 'umd',
     clean: true
   },
@@ -61,7 +61,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-        filename: 'css/index.css'
+      filename: 'css/index.css'
     }),
     new webpack.BannerPlugin(banner)
   ],
